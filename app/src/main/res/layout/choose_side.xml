@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clChoose"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:onClick="changeToSurvivor">
+
+    <Button
+        android:id="@+id/survivorButton"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_config"
+        android:onClick="changeToSurvivor"
+        android:text="Play as a survivor"
+        android:textColorLink="#2B2D30"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/killerButton"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/survivorBonus"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="25dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/survivorButton"
+        app:layout_constraintEnd_toEndOf="@+id/survivorButton" />
+
+    <Button
+        android:id="@+id/killerButton"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_config"
+        android:text="Play as a killer"
+        android:textColorLink="#2B2D30"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/survivorButton"/>
+
+    <TextView
+        android:id="@+id/killerBonus"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="25dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/killerButton"
+        app:layout_constraintEnd_toEndOf="@+id/killerButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
