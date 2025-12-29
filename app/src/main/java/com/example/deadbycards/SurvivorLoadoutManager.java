@@ -27,7 +27,8 @@ public class SurvivorLoadoutManager extends RecyclerView.Adapter<SurvivorViewHol
 
     @Override
     public void onBindViewHolder(@NonNull SurvivorViewHolder holder, int position) {
-        holder.
+        holder.imageView.setImageResource(survivors.get(position).getImageId(context));
+        holder.survivorName.setText(survivors.get(position).getName());
     }
 
     @Override

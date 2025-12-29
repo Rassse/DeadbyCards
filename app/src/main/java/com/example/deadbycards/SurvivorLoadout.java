@@ -28,7 +28,7 @@ public class SurvivorLoadout extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.rvUserList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new );
+        recyclerView.setAdapter(new SurvivorLoadoutManager(getApplicationContext(), survivorStorage.getSurvivors()));
 
 
 

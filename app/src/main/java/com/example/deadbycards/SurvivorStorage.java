@@ -21,6 +21,7 @@ public class SurvivorStorage {
         return survivorStorage;
     }
 
+    public ArrayList<Survivor> getSurvivors() { return survivors; }
 
 
 }
