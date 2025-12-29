@@ -19,7 +19,7 @@ public class ConnectToDatabase extends SQLiteOpenHelper {
     private static final String TABLE_NAME = "my_library";
     private static final String COLUMN_ID = "_id";
     private static final String COLUMN_NAME = "survivor_name";
-    private static final String COLUMN_IMAGE = "survivor_image"; // Added image column based on previous context
+    private static final String COLUMN_IMAGE = "survivor_image";
     private static final String COLUMN_PERKONE = "perk_one";
     private static final String COLUMN_PERKTWO = "perk_two";
     private static final String COLUMN_PERKTHREE = "perk_three";
