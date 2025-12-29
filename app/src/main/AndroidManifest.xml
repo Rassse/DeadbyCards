@@ -13,11 +13,18 @@
         android:theme="@style/Theme.DeadByCards"
         tools:targetApi="31">
         <activity
+            android:name=".SurvivorViewHolder"
+            android:exported="false" />
+        <activity
+            android:name=".AddSurvivor"
+            android:exported="false" />
+        <activity
             android:name=".Intro"
             android:exported="true"
             android:theme="@style/Theme.DeadByCards.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
