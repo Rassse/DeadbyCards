@@ -22,7 +22,7 @@
             android:orientation="vertical"
             android:padding="8dp">
 
-            <!-- ROW 1: Dwight -->
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,10 +34,10 @@
                     android:layout_height="100dp"
                     android:scaleType="centerCrop"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/dwight" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cgDwight"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -48,9 +48,18 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                 </com.google.android.material.chip.ChipGroup>
+
+                <Button
+                    android:id="@+id/buttonDwight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add the survivor"
+                    app:layout_constraintStart_toStartOf="@id/cgDwight"
+                    app:layout_constraintTop_toBottomOf="@id/cgDwight"
+                    app:layout_constraintEnd_toEndOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!-- ROW 2: Feng -->
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -62,10 +71,10 @@
                     android:layout_height="100dp"
                     android:scaleType="centerCrop"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/feng" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cgFeng"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -75,9 +84,18 @@
                     app:layout_constraintStart_toEndOf="@id/imageFeng"
                     app:layout_constraintTop_toTopOf="parent">
                 </com.google.android.material.chip.ChipGroup>
+
+                <Button
+                    android:id="@+id/buttonFeng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add the survivor"
+                    app:layout_constraintStart_toStartOf="@id/cgFeng"
+                    app:layout_constraintTop_toBottomOf="@id/cgFeng"
+                    app:layout_constraintEnd_toEndOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!-- ROW 3: Kate -->
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,10 +107,10 @@
                     android:layout_height="100dp"
                     android:scaleType="centerCrop"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/kate" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cgKate"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -101,9 +119,18 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/imageKate"
                     app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/buttonKate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add the survivor"
+                    app:layout_constraintStart_toStartOf="@id/cgKate"
+                    app:layout_constraintTop_toBottomOf="@id/cgKate"
+                    app:layout_constraintEnd_toEndOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!-- ROW 4: Michonne -->
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,10 +142,10 @@
                     android:layout_height="100dp"
                     android:scaleType="centerCrop"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/michonne" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cgMichonne"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -127,8 +154,16 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/imageMichonne"
                     app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
+                <Button
+                    android:id="@+id/buttonMichonne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add the survivor"
+                    app:layout_constraintStart_toStartOf="@id/cgMichonne"
+                    app:layout_constraintTop_toBottomOf="@id/cgMichonne"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 

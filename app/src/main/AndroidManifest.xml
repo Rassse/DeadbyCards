@@ -13,11 +13,8 @@
         android:theme="@style/Theme.DeadByCards"
         tools:targetApi="31">
         <activity
-            android:name=".SurvivorViewHolder"
-            android:exported="false" />
-        <activity
             android:name=".AddSurvivor"
-            android:exported="false" />
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
         <activity
             android:name=".Intro"
             android:exported="true"
